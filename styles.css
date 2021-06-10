@@ -1,0 +1,33 @@
+body {
+    background-color: purple;
+    margin: 0 auto;
+    justify-content: center;
+ }
+
+ main {
+     justify-content: center;
+     display: inline-flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     color: lightgreen;
+     font-family: monospace;
+     margin: 0 auto;
+     text-align: center;
+     
+ }
+
+h3 {
+   cursor: pointer;
+   text-align: center;
+   font-style: oblique;
+   font-family: monospace;
+   background-color: lightgreen;
+   color: purple; 
+   margin: 0 auto;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   border-radius: 50em;
+   width: 130px;
+   border: 3px solid green;
+}
+
