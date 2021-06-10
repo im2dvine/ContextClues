@@ -10,13 +10,13 @@ $(document).ready(function () {
     }
 
     function getAlert(i) {
-        var friend = friends[i % 5];
-        var location = locations[i % 10];
-        var weapon = weapons[i % 20];
+        var friend = friends[i % 5]; //5 = friends.length
+        var location = locations[i % 10]; //10 = locations.length
+        var weapon = weapons[i % 20]; //20 = weapons.length
         function accuAlert() {
             alert("Accusation " + i + ": I accuse " + friend + ", with the " + weapon + " in the " + location + "!");
-            var $h2 = $("<h2>Accusation " + i + ": I accuse " + friend + ", with the " + weapon + " in the " + location + "!</h2>");
-            $h2.appendTo("main");
+            var $ul = $("<ul>Accusation " + i + ": I accuse " + friend + ", with the " + weapon + " in the " + location + "!</ul>");
+            $ul.appendTo("body");
         }
         return accuAlert;
     }
